@@ -68,7 +68,7 @@ public class RecentTaskListFragment extends ListFragment implements RecentTaskLi
 	}
 
 	@Override
-	public void onProviderFininshed(AsyncProvider<MyActivityInfo[]> task, MyActivityInfo[] value) {
+	public void onProviderFinished(AsyncProvider<MyActivityInfo[]> task, MyActivityInfo[] value) {
 		try {
 			this.activities = value;
 			setListAdapter(new RecentTaskListAdapter(this.getActivity(), android.R.layout.simple_list_item_1, this.activities));
