@@ -10,9 +10,9 @@ rm -fr ../descriptions
 mv descriptions ..
 
 for d in ?? ??-??; do
-   echo $d
-   rm -fr ../ActivityLauncherApp/src/main/res/values-$(echo $d | sed 's/-/-r/')
-   mv $d ../ActivityLauncherApp/src/main/res/values-$(echo $d | sed 's/-/-r/')
+   echo ${d}
+   rm -fr ../ActivityLauncherApp/src/main/res/values-$(echo ${d} | sed 's/-/-r/')
+   mv ${d} ../ActivityLauncherApp/src/main/res/values-$(echo ${d} | sed 's/-/-r/')
 done
 
 popd

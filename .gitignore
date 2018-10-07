@@ -1,6 +1,6 @@
-/build
+build/
 local.properties
-/.idea
-/.gradle
-/ActivityLauncherApp/build
+.idea/
+.gradle/
+*.iml
 /ActivityLauncherApp/keystore.jks
